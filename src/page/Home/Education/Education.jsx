@@ -11,13 +11,13 @@ const Education = () => {
       .then((data) => setEducations(data));
   }, []);
   return (
-    <div className="">
+    <div>
       <SectionTitle
         subHeading="education"
         heading="our education"
       ></SectionTitle>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5 mx-5" >
         {educations?.map((item) => (
           <div key={item.id}>
             <img

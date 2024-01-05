@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="footer p-10 bg-neutral text-neutral-content">
         <aside>
           <Link to="/">
-            <img src="https://i.ibb.co/9NjtFjF/logo.jpg"className="h-14" />
+            <img src="https://i.ibb.co/9NjtFjF/logo.jpg" className="h-14" />
           </Link>
           <p>
             Eshaal Public School.
@@ -20,7 +21,6 @@ const Footer = () => {
         <nav>
           <header className="footer-title">Important Link</header>
           <div className="grid grid-flow-col gap-4">
-            
             <h1>
               <Link to="/admission">Admission</Link>
             </h1>
@@ -34,6 +34,11 @@ const Footer = () => {
               <Link to="/contact">Contact</Link>
             </h1>
           </div>
+
+          <div className="grid  ">
+            <h1>Phone Number: +92 301 4126824</h1>
+            <h1>Phone Number: +92 331 8730421</h1>
+          </div>
         </nav>
         <nav>
           <header className="footer-title">Social Contact</header>
@@ -41,8 +46,11 @@ const Footer = () => {
             <Link className="" to="https://www.facebook.com/eshaalpublicschool">
               <FaFacebook className="text-4xl" />
             </Link>
-            <Link to="https://www.facebook.com/eshaalpublicschool">
+            <Link to="https://www.instagram.com/eshaal_public_school?igsh=YWYwM2I1ZDdmOQ==">
               <FaInstagramSquare className="text-4xl" />
+            </Link>
+            <Link to="mailto:max.rehmantariq8929@gmail.com?body=My custom mail body">
+              <MdOutlineMail className="text-4xl" />
             </Link>
           </div>
         </nav>

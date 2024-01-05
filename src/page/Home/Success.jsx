@@ -1,6 +1,6 @@
-import { Helmet } from "react-helmet";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Success = () => {
   const [success, setSuccess] = useState([]);
@@ -11,23 +11,19 @@ const Success = () => {
       .then((data) => setSuccess(data));
   }, []);
   return (
-    <div>
-      <Helmet>
-        <title>Success | Eshaal Public School</title>
-      </Helmet>
-      <SectionTitle subHeading='-----' heading='Our successfully Student'></SectionTitle>
-    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-5 mx-5" >
+    <div className="my-10 ">
+       <SectionTitle subHeading='-----' heading="Our Success"></SectionTitle>
+      <Marquee pauseOnHover={true} speed={20}>
         {success?.map((item) => (
           <div key={item.id}>
             <img
-              className="h-96 max-w-full rounded-lg w-96 border border-green-600"
+              className="h-96 max-w-full rounded-lg w-96 border border-green-600 gap-10 shadow-xl"
               src={item?.image}
               alt="education image"
             />
           </div>
         ))}
-      </div>
+      </Marquee>
     </div>
   );
 };

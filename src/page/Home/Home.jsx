@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet";
 import Banner from "./Banner/Banner";
 import Management from "./Management/Management";
 import Education from "./Education/Education";
+import Success from "./Success";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Banner></Banner>
       <Management></Management>
       <Education></Education>
+      <Success></Success>
+      <Contact></Contact>
     </div>
   );
 };
