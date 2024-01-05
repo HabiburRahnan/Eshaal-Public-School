@@ -6,31 +6,31 @@ const Banner = () => {
         <div id="item1" className="carousel-item w-full">
         <img
             src="https://i.ibb.co/02X6fVY/admition.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
           <img
             src="https://i.ibb.co/YBdcbLx/ima2.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
         </div>
         <div id="item2" className="carousel-item w-full">
         <img
             src="https://i.ibb.co/6whZCbL/slider6.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
           <img
             src="https://i.ibb.co/hchw0K5/slider7.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
         </div>
         <div id="item3" className="carousel-item w-full">
         <img
             src="https://i.ibb.co/8NYT8F5/slider4.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
           <img
             src="https://i.ibb.co/Y3V0BL0/slider5.jpg"
-            className="w-[50%] h-[400px]"
+            className="w-full md:w-[50%] h-[400px] "
           />
         </div>
         <div id="item4" className="carousel-item w-full">

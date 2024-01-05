@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -12,13 +14,18 @@ const Footer = () => {
           <p>
             Eshaal Public School.
             <br />
-            Providing reliable tech since 1992
+            Meli Burji, Punjab, Pakistan
           </p>
         </aside>
         <nav>
-          <header className="footer-title">Social</header>
+          <header className="footer-title">Social Contact</header>
           <div className="grid grid-flow-col gap-4">
-            
+            <Link className="" to="https://www.facebook.com/eshaalpublicschool">
+              <FaFacebook className="text-4xl"/>
+            </Link>
+            <Link to="https://www.facebook.com/eshaalpublicschool">
+              <FaInstagramSquare className="text-4xl"/>
+            </Link>
           </div>
         </nav>
       </div>

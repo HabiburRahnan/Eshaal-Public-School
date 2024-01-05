@@ -7,16 +7,16 @@ const Navbar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/">Admission</Link>
+        <Link to="/admission">Admission</Link>
       </li>
       <li>
-        <Link to="/">Sucess</Link>
+        <Link to="/sucess">Sucess</Link>
       </li>
       <li>
-        <Link to="/">About</Link>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </li>
     </>
   );
@@ -48,9 +48,14 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <Link to="/">
-            <img src="https://i.ibb.co/9NjtFjF/logo.jpg" className="h-14" />
-          </Link>
+          <div
+            className="tooltip  tooltip-right h-14"
+            data-tip="Eshaal Public School"
+          >
+            <Link to="/">
+              <img src="https://i.ibb.co/9NjtFjF/logo.jpg" className="h-14" />
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navItem}</ul>

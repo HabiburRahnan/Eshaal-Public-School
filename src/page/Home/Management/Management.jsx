@@ -1,0 +1,36 @@
+import { useEffect, useState } from "react";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+
+const Management = () => {
+  const [manages, setManages] = useState([]);
+
+  useEffect(() => {
+    fetch("/management.json")
+      .then((res) => res.json())
+      .then((data) => setManages(data));
+  }, []);
+  console.log(manages);
+  return (
+    <div>
+      <SectionTitle
+        subHeading="--management--"
+        heading="Institute management"
+      ></SectionTitle>
+      <div className="grid gri md:grid-cols-2 lg:grid-cols-3 mx-auto gap-10 mb-10">
+        {manages?.map((manage) => (
+          <div key={manage.id} className="card  glass">
+            <figure>
+              <img src={manage?.image} alt="Management!" className="h-[300px]" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">{manage?.name}</h2>
+              <p>{manage?.statuse}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Management;

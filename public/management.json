@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Asifa Rehman",
+    "statuse": "Principal eshaal Public School",
+    "image": "https://i.ibb.co/c8hVXhG/pincipal.jpg"
+   
+  },
+  {
+    "id": 2,
+    "name": " Rehman Tariq",
+    "statuse": "Director eshaal Public School",
+    "image": "https://i.ibb.co/2yG6pbB/director.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Muhammad Anjum Awan",
+    "statuse": "Brand Ambassador eshaal Public School",
+    "image": "https://i.ibb.co/JRHWxLs/Brand.jpg"
+  }
+]
