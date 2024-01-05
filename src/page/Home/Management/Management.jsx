@@ -9,7 +9,7 @@ const Management = () => {
       .then((res) => res.json())
       .then((data) => setManages(data));
   }, []);
-  console.log(manages);
+//   console.log(manages);
   return (
     <div>
       <SectionTitle
