@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer p-10 bg-neutral text-neutral-content">
         <aside>
           <Link to="/">
-            <img src="https://i.ibb.co/9NjtFjF/logo.jpg" className="h-14" />
+            <img src="https://i.ibb.co/9NjtFjF/logo.jpg"className="h-14" />
           </Link>
           <p>
             Eshaal Public School.

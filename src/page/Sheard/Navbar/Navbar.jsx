@@ -1,3 +1,4 @@
+import Headroom from "react-headroom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -21,14 +22,14 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100 fixed">
+    <Headroom>
+      <div className="navbar sticky top-3  bg-opacity-30 bg-base-100  max-w-[1280px] mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button"className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+               className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -43,17 +44,17 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navItem}
             </ul>
           </div>
           <div
-            className="tooltip  tooltip-right h-14"
+           className="tooltip  tooltip-right h-14"
             data-tip="Eshaal Public School"
           >
             <Link to="/">
-              <img src="https://i.ibb.co/9NjtFjF/logo.jpg" className="h-14" />
+              <img src="https://i.ibb.co/9NjtFjF/logo.jpg"className="h-14" />
             </Link>
           </div>
         </div>
@@ -62,7 +63,7 @@ const Navbar = () => {
         </div>
         
       </div>
-    </div>
+    </Headroom>
   );
 };
 

@@ -1,21 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Asifa Rehman",
-    "statuse": "Principal eshaal Public School",
-    "image": "https://i.ibb.co/c8hVXhG/pincipal.jpg"
-   
-  },
-  {
-    "id": 2,
-    "name": " Rehman Tariq",
-    "statuse": "Director eshaal Public School",
+    "name": "Rehman Tariq",
+    "statuse": "Director Eshaal Public School",
     "image": "https://i.ibb.co/2yG6pbB/director.jpg"
   },
   {
+    "id": 2,
+
+    "name": "Asifa Rehman",
+    "statuse": "Principal Eshaal Public School",
+    "image": "https://i.ibb.co/sRy6BFz/pincipal1.jpg"
+  },
+
+  {
     "id": 3,
+    "title": "Our Proud Our Brand",
+    "name": "Eshaal Rehman",
+    "statuse": "Eshaal Public School",
+    "image": "https://i.ibb.co/c8hVXhG/pincipal.jpg"
+  },
+  {
+    "id": 4,
     "name": "Muhammad Anjum Awan",
-    "statuse": "Brand Ambassador eshaal Public School",
+    "statuse": "Brand Ambassador Eshaal Public School",
     "image": "https://i.ibb.co/JRHWxLs/Brand.jpg"
   }
 ]

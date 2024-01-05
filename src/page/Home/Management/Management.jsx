@@ -16,14 +16,14 @@ const Management = () => {
         subHeading="--management--"
         heading="Institute management"
       ></SectionTitle>
-      <div className="grid gri md:grid-cols-2 lg:grid-cols-3 mx-auto gap-10 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-10 mb-10">
         {manages?.map((manage) => (
           <div key={manage.id} className="card  glass">
             <figure>
               <img src={manage?.image} alt="Management!" className="h-[300px]" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">{manage?.name}</h2>
+              <h2 className="card-title"><span className="text-2xl font-bold">{manage?.title}</span> {manage?.name}</h2>
               <p>{manage?.statuse}</p>
             </div>
           </div>
